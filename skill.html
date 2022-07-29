@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/reuse.css">
+    <link rel="stylesheet" href="style/skill.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        .navbar {
+            background-color: #000000;
+        }
+
+        .navbar {
+            position: sticky;
+        }
+    </style>
+    <title>sameer shaikh</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="index.html">sameer<span> shaikh</span></a></div>
+            <ul class="menu">
+                <li><a href="index.html" class="menu_btn">Home</a></li>
+                <li><a href="about.html" class="menu_btn">About</a></li>
+                <li><a href="#" class="menu_btn">Skills</a></li>
+                <li><a href="contact.html" class="menu_btn">Contact</a></li>
+            </ul>
+            <div class="menu_btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="right">
+                    <div class="skill_close">
+                        <div class="skill_header" id="skill_header1">
+                            <i class="uil uil-brackets-curly skill_icon"></i>
+                            <div>
+                                <h1 class="skill_title">FrontEnd skill</h1>
+                            </div>
+                            <i class="uil uil-angle-down skill_arrow_down" id="skill_arrow_notification"></i>
+                        </div>
+                        <div class="frontend" id="front" style="display: none;">
+                            <div class="bars">
+                                <div class="info">
+                                    <span>HTML</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="line html"></div>
+                            </div>
+                            <div class="bars">
+                                <div class="info">
+                                    <span>CSS</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="line css"></div>
+                            </div>
+                            <div class="bars">
+                                <div class="info">
+                                    <span>JavaScript</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="line js"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="skill_close">
+                        <div class="skill_header" id="skill_header2">
+                            <i class="uil uil-arrow skill_icon"></i>
+                            <!-- <i class="uil uil-arrow"></i> -->
+                            <div>
+                                <h1 class="skill_title">BAckend skill</h1>
+                            </div>
+                            <i class="uil uil-angle-down skill_arrow_down" id="skill_arrow_notification2"></i>
+                        </div>
+                        <div class="frontend" id="backend" style="display: none;">
+                            <div class="bars">
+                                <div class="info">
+                                    <span>PHP</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="line php"></div>
+                            </div>
+                            <div class="bars">
+                                <div class="info">
+                                    <span>MySQL</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="line mysql"></div>
+                            </div>
+                            <div class="bars">
+                                <div class="info">
+                                    <span>python</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="line python"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+
+        const Skillheader1 = document.getElementById('skill_header1')
+        const frontheader = document.getElementById('front')
+        function toggleSkill() {
+            var frontarrowchange = document.getElementById('skill_arrow_notification');
+            // console.log("hello");
+            if (frontheader.style.display === "none") {
+                console.log("display");
+                frontheader.style.display = "block";
+                frontarrowchange.classList.remove("skill_arrow_down");
+                frontarrowchange.classList.add("skill_arrow_up");
+
+
+            } else {
+                frontheader.style.display = "none";
+                frontarrowchange.classList.add("skill_arrow_down");
+                frontarrowchange.classList.remove("skill_arrow_up");
+                console.log("not sow");
+            }
+        }
+        Skillheader1.addEventListener('click', toggleSkill);
+
+
+        // $(document).ready(() => {
+        //     $("#skill_header2").click(() => {
+        //         $('#backend').toggle(500);
+
+        //     });
+        // });
+
+
+
+
+        const Skillheader2 = document.getElementById('skill_header2')
+        const backehader = document.getElementById('backend')
+        function toggleSkill2() {
+            var backendarrowchange = document.getElementById('skill_arrow_notification2');
+            // console.log("hello");
+            if (backehader.style.display === "none") {
+                console.log("display2");
+                backehader.style.display = "block";
+                backendarrowchange.classList.remove("skill_arrow_down");
+                backendarrowchange.classList.add("skill_arrow_up");
+
+
+            } else {
+                backehader.style.display = "none";
+                backendarrowchange.classList.add("skill_arrow_down");
+                backendarrowchange.classList.remove("skill_arrow_up");
+                console.log("not sow2");
+            }
+        }
+        Skillheader2.addEventListener('click', toggleSkill2);
+
+
+    </script>
+
+</body>
+
+</html>

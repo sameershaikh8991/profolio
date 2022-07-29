@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="img/icon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/reuse.css">
+    <link rel="stylesheet" href="style/about.css">
+   
+    <style>
+        .navbar {
+            background-color: #000000;
+        }
+
+        .navbar {
+            position: sticky;
+        }
+
+        ::marker {
+            content: '» ';
+            color: blue;
+            font-size: 28px;
+
+        }
+    </style>
+    <title>sameer shaikh</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="index.html">sameer<span> shaikh</span></a></div>
+            <ul class="menu">
+                <li><a href="index.html" class="menu_btn">Home</a></li>
+                <li><a href="#" class="menu_btn">About</a></li>
+                <li><a href="skill.html" class="menu_btn">Skills</a></li>
+                <li><a href="contact.html" class="menu_btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about" id="about">
+        <div class="max-width">
+
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="img/abt.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text"> Hello I'm Sameer, nice to meet you I am a <span class="typing"></span></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque
+                        autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus
+                        accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus
+                        veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis
+                        beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+
+                    <div class="info">
+                        <div>
+                            <ul>
+                                <li> <strong>Name:</strong> <span> sameer shaikh </span>
+                                </li>
+                                <li> <strong>Phone:</strong> <span>+91 9762167299</span>
+                                </li>
+                                <li> <strong>City:</strong> <span>Mumbai ,india</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+
+                                <li> <strong>Degree:</strong> <span>bachelor of engineering(IT)</span>
+                                </li>
+                                <li> <strong>Email:</strong><span>sameershakh8991@gmail.com</span>
+                                </li>
+                                <li> <strong>linkedin</strong>
+                                    <span><a href="https://www.linkedin.com/in/thesameershaikh/">go to linkedin</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button>Download CV</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+    <script>
+        new Typed('.typing', {
+            strings: ['programmer', 'Developer', 'Designer'],
+            typeSpeed: 100,
+            delaySpeed: 80,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
