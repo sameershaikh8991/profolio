@@ -1,12 +1,13 @@
 
 section .title{
-    /* position: relative; */
+    position: relative;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
     padding-top: 20px;
     margin-bottom: 60px;
     padding-bottom: 20px;
+    font-weight: bold;
 }
 .container {
     max-width: 1000px;
